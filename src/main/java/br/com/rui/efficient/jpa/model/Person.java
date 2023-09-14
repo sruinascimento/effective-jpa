@@ -14,12 +14,14 @@ public class Person {
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
     private String name;
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     @JoinColumn(name = "address_id")
     private Address address;
-
     @OneToMany(mappedBy = "person")
     private List<Dog> dogs = new ArrayList<>();
+    @ManyToMany
+    @JoinTable(name = "Person_Job")
+    private List<Job> jobs;
 
     @Deprecated
     public Person() {
