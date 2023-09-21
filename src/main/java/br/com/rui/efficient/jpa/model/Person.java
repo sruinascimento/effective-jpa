@@ -21,7 +21,7 @@ public class Person {
     private List<Dog> dogs = new ArrayList<>();
     @ManyToMany
     @JoinTable(name = "Person_Job")
-    private List<Job> jobs;
+    private List<Job> jobs = new ArrayList<>();
 
     @Deprecated
     public Person() {
@@ -56,6 +56,9 @@ public class Person {
         this.dogs.add(dog);
     }
 
+    public void addJob(Job job) {
+        this.jobs.add(job);
+    }
     @Override
     public String toString() {
         return "Person{" +

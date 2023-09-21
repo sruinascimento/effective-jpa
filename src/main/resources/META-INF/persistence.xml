@@ -11,6 +11,8 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.Address</class>
         <class>br.com.rui.efficient.jpa.model.Dog</class>
         <class>br.com.rui.efficient.jpa.model.Job</class>
+        <class>br.com.rui.efficient.jpa.model.Menu</class>
+        <class>br.com.rui.efficient.jpa.model.SubItem</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
