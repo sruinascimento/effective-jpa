@@ -2,6 +2,7 @@ package br.com.rui.efficient.jpa;
 
 import br.com.rui.efficient.jpa.model.Address;
 import br.com.rui.efficient.jpa.model.Music;
+import br.com.rui.efficient.jpa.model.MusicId;
 import br.com.rui.efficient.jpa.model.Person;
 import br.com.rui.efficient.jpa.util.JPAUtil;
 import jakarta.persistence.EntityManager;
@@ -12,7 +13,7 @@ public class MainDoublePK {
         try {
 
             entityManager.getTransaction().begin();
-            Music music = new Music("Music 1", "Album 1");
+            Music music = new Music(new MusicId("A7X", 240), "Album 1");
             entityManager.persist(music);
 
             entityManager.getTransaction().commit();

@@ -1,25 +1,22 @@
 package br.com.rui.efficient.jpa.model;
 
 
+import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 
-import static jakarta.persistence.GenerationType.IDENTITY;
 
 @Entity
+
 public class Music {
-    @Id
-    @GeneratedValue(strategy = IDENTITY)
-    private Long id;
-    private String name;
+    @EmbeddedId
+    private MusicId id;
     private String album;
 
     public Music() {
     }
 
-    public Music(String name, String album) {
-        this.name = name;
+    public Music(MusicId id, String album) {
+        this.id = id;
         this.album = album;
     }
 
@@ -27,7 +24,6 @@ public class Music {
     public String toString() {
         return "Music{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
                 ", album='" + album + '\'' +
                 '}';
     }
