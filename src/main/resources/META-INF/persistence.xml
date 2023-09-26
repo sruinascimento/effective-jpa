@@ -14,6 +14,10 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.Menu</class>
         <class>br.com.rui.efficient.jpa.model.SubItem</class>
         <class>br.com.rui.efficient.jpa.model.Music</class>
+        <class>br.com.rui.efficient.jpa.model.RecursosHumanos</class>
+        <class>br.com.rui.efficient.jpa.model.Pessoa</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaFisica</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaJuridica</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
