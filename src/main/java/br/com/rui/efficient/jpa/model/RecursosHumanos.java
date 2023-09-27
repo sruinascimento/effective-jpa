@@ -16,6 +16,11 @@ public class RecursosHumanos extends Departamento{
         super(nome);
     }
 
+    @Deprecated
+    public RecursosHumanos() {
+
+    }
+
     @Override
     public void calcularDespesasDoMes() {
         System.out.println("Calculando despesas do mês de RH");

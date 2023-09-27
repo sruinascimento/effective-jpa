@@ -18,6 +18,12 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.Pessoa</class>
         <class>br.com.rui.efficient.jpa.model.PessoaFisica</class>
         <class>br.com.rui.efficient.jpa.model.PessoaJuridica</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaJoined</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaFisicaJoined</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaJuridicaJoined</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaTPC</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaFisicaTPC</class>
+        <class>br.com.rui.efficient.jpa.model.PessoaJuridicaTPC</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
