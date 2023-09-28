@@ -24,6 +24,8 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.PessoaTPC</class>
         <class>br.com.rui.efficient.jpa.model.PessoaFisicaTPC</class>
         <class>br.com.rui.efficient.jpa.model.PessoaJuridicaTPC</class>
+        <class>br.com.rui.efficient.jpa.model.embedded.Endereco</class>
+        <class>br.com.rui.efficient.jpa.model.embedded.Pessoa</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
