@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
@@ -17,6 +18,10 @@ public class PessoaEC {
     @ElementCollection
     @CollectionTable(name = "pessoa_emails")
     private Set<String> emails = new HashSet<>();
+
+    @ElementCollection(targetClass = PerfilDoUsuario.class)
+    @Enumerated(EnumType.STRING)
+    private List<PerfilDoUsuario> perfis;
 
     @Deprecated
     public PessoaEC() {
@@ -43,5 +48,17 @@ public class PessoaEC {
 
     public void removerEmail(String email) {
         emails.remove(email);
+    }
+
+    public List<PerfilDoUsuario> getPerfis() {
+        return Collections.unmodifiableList(perfis);
+    }
+
+    public void adcionarPerfil(PerfilDoUsuario perfil) {
+        perfis.add(perfil);
+    }
+
+    public void removerPerfil(PerfilDoUsuario perfil) {
+        perfis.remove(perfil);
     }
 }
