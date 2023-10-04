@@ -30,6 +30,9 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.enums.DetalheCompra</class>
         <class>br.com.rui.efficient.jpa.model.element.collection.PessoaEC</class>
         <class>br.com.rui.efficient.jpa.model.element.collection.Employee</class>
+        <class>br.com.rui.efficient.jpa.model.element.collection.Employee</class>
+        <class>br.com.rui.efficient.jpa.model.onetoone.PessoaOneToOne</class>
+        <class>br.com.rui.efficient.jpa.model.onetoone.EnderecoOneToOne</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
