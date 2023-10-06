@@ -33,6 +33,8 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.element.collection.Employee</class>
         <class>br.com.rui.efficient.jpa.model.onetoone.PessoaOneToOne</class>
         <class>br.com.rui.efficient.jpa.model.onetoone.EnderecoOneToOne</class>
+        <class>br.com.rui.efficient.jpa.model.onetomany.PessoaOneToMany</class>
+        <class>br.com.rui.efficient.jpa.model.onetomany.Pet</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
