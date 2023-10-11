@@ -37,8 +37,10 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.onetomany.Pet</class>
         <class>br.com.rui.efficient.jpa.model.manytomany.PessoaManyToMany</class>
         <class>br.com.rui.efficient.jpa.model.manytomany.Trabalho</class>
-        <class>br.com.rui.efficient.jpa.model.review.relationship.Professor</class>
-        <class>br.com.rui.efficient.jpa.model.review.relationship.SchoolSubject</class>
+        <class>br.com.rui.efficient.jpa.model.review.relationship.onetomany.Professor</class>
+        <class>br.com.rui.efficient.jpa.model.review.relationship.onetomany.SchoolSubject</class>
+        <class>br.com.rui.efficient.jpa.model.review.relationship.manytomany.Course</class>
+        <class>br.com.rui.efficient.jpa.model.review.relationship.manytomany.Student</class>
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>

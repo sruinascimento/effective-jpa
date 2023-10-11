@@ -1,4 +1,4 @@
-package br.com.rui.efficient.jpa.model.review.relationship;
+package br.com.rui.efficient.jpa.model.review.relationship.onetomany;
 
 import br.com.rui.efficient.jpa.util.JPAUtil;
 import jakarta.persistence.EntityManager;
