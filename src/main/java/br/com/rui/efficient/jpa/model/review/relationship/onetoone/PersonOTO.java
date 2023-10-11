@@ -24,6 +24,10 @@ public class PersonOTO {
         this.document = document;
     }
 
+    public PersonOTO(String name) {
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }
@@ -34,5 +38,9 @@ public class PersonOTO {
 
     public Document getDocument() {
         return document;
+    }
+
+    public void associateDocument(Document document) {
+        this.document = document;
     }
 }
