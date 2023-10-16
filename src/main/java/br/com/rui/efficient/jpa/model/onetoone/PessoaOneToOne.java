@@ -10,7 +10,7 @@ public class PessoaOneToOne {
     @GeneratedValue(strategy = IDENTITY)
     private Long id;
     private String nome;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "endereco_id")
     private EnderecoOneToOne endereco;
 
