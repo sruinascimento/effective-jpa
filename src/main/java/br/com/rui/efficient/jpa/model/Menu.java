@@ -1,12 +1,14 @@
 package br.com.rui.efficient.jpa.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
 import static jakarta.persistence.CascadeType.PERSIST;
-import static jakarta.persistence.CascadeType.REMOVE;
 import static jakarta.persistence.GenerationType.IDENTITY;
 
-@Entity
+@Entity(name = "MenuMusic")
 public class Menu {
     @Id
     @GeneratedValue(strategy = IDENTITY)
