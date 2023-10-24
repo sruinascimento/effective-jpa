@@ -47,6 +47,8 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.orphanremoval.Item</class>
         <class>br.com.rui.efficient.jpa.model.lazyandeager.PessoaEL</class>
         <class>br.com.rui.efficient.jpa.model.lazyandeager.Email</class>
+        <class>br.com.rui.efficient.jpa.model.functionmath.Aluno</class>
+
 
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
