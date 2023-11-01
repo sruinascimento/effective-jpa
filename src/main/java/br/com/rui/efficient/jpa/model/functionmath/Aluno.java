@@ -15,17 +15,19 @@ public class Aluno {
     private Long id;
     private String nome;
     @Transient
-    private Long notaTotal;
-    @ElementCollection
-    @CollectionTable(name = "alunos_notas", joinColumns = @JoinColumn(name = "aluno_id"))
-    @Column(name = "notas")
-    private List<Integer> notas;
+    private double notaTotal;
+    @OneToMany(mappedBy = "aluno", fetch = FetchType.EAGER)
+    private List<Nota> notas;
 
     @Deprecated
     public Aluno() {
     }
 
-    public Aluno(String nome, List<Integer> notas) {
+    public Aluno(String nome) {
+        this.nome = nome;
+    }
+
+    public Aluno(String nome, List<Nota> notas) {
         this.nome = nome;
         this.notas = notas;
     }
@@ -38,24 +40,17 @@ public class Aluno {
         return nome;
     }
 
-    public Long getNotaTotal() {
-        return notaTotal;
-    }
-
-    public List<Integer> getNotas() {
+    public List<Nota> getNotas() {
         return Collections.unmodifiableList(notas);
     }
-
-    public void addNota(Integer nota) {
-        this.notas.add(nota);
+    public void addNota(Nota notas) {
+        this.notas.add(notas);
     }
-
     @Override
     public String toString() {
         return "Aluno{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
-                ", notaTotal=" + notaTotal +
                 ", notas=" + notas +
                 '}';
     }

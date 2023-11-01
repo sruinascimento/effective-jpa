@@ -48,6 +48,10 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
         <class>br.com.rui.efficient.jpa.model.lazyandeager.PessoaEL</class>
         <class>br.com.rui.efficient.jpa.model.lazyandeager.Email</class>
         <class>br.com.rui.efficient.jpa.model.functionmath.Aluno</class>
+        <class>br.com.rui.efficient.jpa.model.functionmath.Nota</class>
+        <class>br.com.rui.efficient.jpa.model.jpql.Degree</class>
+        <class>br.com.rui.efficient.jpa.model.jpql.Content</class>
+        <class>br.com.rui.efficient.jpa.model.jpql.Certificate</class>
 
 
 
